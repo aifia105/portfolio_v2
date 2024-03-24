@@ -5,7 +5,7 @@ import {Providers} from "./providers";
 import { cn } from "@/lib/utils";
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import NavbarComponent from "@/components/Navbar";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,7 +29,7 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}><Providers>
-        <Header />
+        <NavbarComponent />
         {children}
         <Footer />
       </Providers></body>
