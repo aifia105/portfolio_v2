@@ -4,6 +4,9 @@ import "./globals.css";
 import {Providers} from "./providers";
 import { cn } from "@/lib/utils";
 
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans"
@@ -26,7 +29,9 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}><Providers>
+        <Header />
         {children}
+        <Footer />
       </Providers></body>
     </html>
   );

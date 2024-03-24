@@ -3,6 +3,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme")
 import {nextui} from "@nextui-org/react";
 
 const config = {
+
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',

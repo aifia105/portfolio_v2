@@ -16,7 +16,7 @@ const NavbarComponent = () => {
     setIsActive(activeLink);
   };
   return (
-    <Navbar isBordered>
+      <Navbar isBordered className="fixed">
       <NavbarContent justify="start">
         <NavbarBrand className="mr-4">
           <img src="9496034.png" className="w-10 h-10" />
@@ -27,7 +27,7 @@ const NavbarComponent = () => {
           <Link
             onClick={() => handleToggle("Home")}
             aria-current="page"
-            color="secondary"
+            color="foreground"
             href="#"
           >
             Home
