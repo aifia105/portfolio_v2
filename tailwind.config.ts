@@ -3,6 +3,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme")
 import {nextui} from "@nextui-org/react";
 
 const config = {
+
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -77,6 +78,10 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      backgroundImage: {
+        hero_shape1: 'url(/shape-2-dark.svg )',
+        hero_shape2: 'url(/shape-1.svg )'
+      }
     },
   },
   plugins: [require("tailwindcss-animate"),nextui()],

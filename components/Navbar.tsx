@@ -16,7 +16,7 @@ const NavbarComponent = () => {
     setIsActive(activeLink);
   };
   return (
-    <Navbar isBordered>
+      <Navbar isBordered >
       <NavbarContent justify="start">
         <NavbarBrand className="mr-4">
           <img src="9496034.png" className="w-10 h-10" />
@@ -27,8 +27,9 @@ const NavbarComponent = () => {
           <Link
             onClick={() => handleToggle("Home")}
             aria-current="page"
-            color="secondary"
-            href="#"
+            color="foreground"
+            href="#home"
+            className="hover:text-blue-600"
           >
             Home
           </Link>
@@ -36,8 +37,9 @@ const NavbarComponent = () => {
         <NavbarItem isActive={isActive === "About"}>
           <Link
             onClick={() => handleToggle("About")}
-            href="#"
+            href="#about"
             color="foreground"
+            className="hover:text-blue-600"
           >
             About
           </Link>
@@ -47,6 +49,7 @@ const NavbarComponent = () => {
             onClick={() => handleToggle("Projects")}
             color="foreground"
             href="#"
+            className="hover:text-blue-600"
           >
             Projects
           </Link>
@@ -56,6 +59,7 @@ const NavbarComponent = () => {
             onClick={() => handleToggle("Experience")}
             color="foreground"
             href="#"
+            className="hover:text-blue-600"
           >
             Experience
           </Link>
@@ -64,7 +68,8 @@ const NavbarComponent = () => {
           <Link
             onClick={() => handleToggle("Contact")}
             color="foreground"
-            href="#"
+            href="#contact"
+            className="hover:text-blue-600"
           >
             Contact Me
           </Link>
