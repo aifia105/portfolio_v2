@@ -29,6 +29,7 @@ const NavbarComponent = () => {
             aria-current="page"
             color="foreground"
             href="#home"
+            className="hover:text-blue-600"
           >
             Home
           </Link>
@@ -38,6 +39,7 @@ const NavbarComponent = () => {
             onClick={() => handleToggle("About")}
             href="#about"
             color="foreground"
+            className="hover:text-blue-600"
           >
             About
           </Link>
@@ -47,6 +49,7 @@ const NavbarComponent = () => {
             onClick={() => handleToggle("Projects")}
             color="foreground"
             href="#"
+            className="hover:text-blue-600"
           >
             Projects
           </Link>
@@ -56,6 +59,7 @@ const NavbarComponent = () => {
             onClick={() => handleToggle("Experience")}
             color="foreground"
             href="#"
+            className="hover:text-blue-600"
           >
             Experience
           </Link>
@@ -65,6 +69,7 @@ const NavbarComponent = () => {
             onClick={() => handleToggle("Contact")}
             color="foreground"
             href="#contact"
+            className="hover:text-blue-600"
           >
             Contact Me
           </Link>
