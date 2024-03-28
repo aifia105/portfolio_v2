@@ -1,6 +1,11 @@
-const DevImg = () => {
+import Image from 'next/image'
+
+
+const DevImg = ({containerStyles, ImgSrc}: {containerStyles: string, ImgSrc: string}) => {
     return (
-        <div>img</div>
+        <div className={`${containerStyles}`}>
+            <Image src={ImgSrc} fill priority alt='' />
+        </div>
     );
 };
 
