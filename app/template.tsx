@@ -15,7 +15,7 @@ const variants = {
 const Template = ({children}: {children: React.ReactNode}) => {
     const completion = useScrollProgress();
     return <>
-    <motion.main variants={variants} initial='hidden' animate='enter' transition={{type: 'linear', delay:0.2, duration:0.4 }}>
+    <motion.main variants={variants} initial='hidden' animate='enter' transition={{type: 'linear', delay:0.2, duration:0.4 }} >
         {children}
     </motion.main>
 
