@@ -28,7 +28,7 @@ const NavbarComponent = () => {
             onClick={() => handleToggle("Home")}
             aria-current="page"
             color="foreground"
-            href="#home"
+            href="#"
             className="hover:text-blue-600"
           >
             Home
