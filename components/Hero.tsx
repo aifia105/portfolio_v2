@@ -22,10 +22,10 @@ const Hero = () => {
             <div className="flex justify-between gap-x-8">
                 <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
                     <div className="text-sm uppercase font-semibold mb-4 text-blue-600 tracking-[4px]">Full Stack Developer.</div>
-                    <h1 className="h1 mb-4">Hello, my name is Aifia Mohamed</h1>
+                    <h1 className="h1 mb-4">Hello, My name is Aifia Med Amine</h1>
                     <p className="subtitle max-w-[490px] mx-auto xl:mx-0">I am a dedicated and creative software developer with a passion for innovation and problem-solving.</p>
                     <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-                        <Link href='/contact' >
+                        <Link href='#contact' >
                         <Button className="gap-x-2 bg-blue-600 hover:bg-blue-600/70">
                             Contact me <Send size={18} />
                         </Button>
@@ -39,7 +39,7 @@ const Hero = () => {
                 <div className="hidden xl:flex relative">
                    
                     <div className="bg-hero_shape1 w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2">
-                        <DevImg containerStyles={'bg-hero_shape2 w-[510px] h-[462px] bg-no-repeat relative bg-bottom'} ImgSrc='/hero.png' />
+                        <DevImg containerStyles={'bg-hero_shape2 w-[510px] h-[462px] bg-no-repeat relative bg-bottom '} ImgSrc='/hero.svg' />
                     </div>
                 </div>
             </div>

@@ -10,19 +10,19 @@ const icons = [
         name: <RiYoutubeFill />
     },
     {
-        path: '/',
+        path: 'https://www.linkedin.com/in/aifia-mohamed-amine/',
         name: <RiLinkedinFill />
     },
     {
-        path: '/',
+        path: 'https://github.com/aifia105',
         name: <RiGithubFill />
     },
     {
-        path: '/',
+        path: 'https://www.instagram.com/mohamed.aifia/?hl=fr',
         name: <RiInstagramFill />
     },
     {
-        path: '/',
+        path: 'https://www.facebook.com/mohamed.aifia.31',
         name: <RiFacebookFill />
     },
 
