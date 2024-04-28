@@ -80,7 +80,9 @@ const config = {
       },
       backgroundImage: {
         hero_shape1: 'url(/shape-2-dark.svg )',
-        hero_shape2: 'url(/shape-1.svg )'
+        hero_shape2: 'url(/shape-1.svg )',
+        dots_light: 'url(/dots-light.svg )',
+        about_shape_light: 'url(/about-light.svg )',
       }
     },
   },
