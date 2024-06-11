@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="container mx-auto">
             <div className="flex justify-between gap-x-8">
                 <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
-                    <div className="text-sm uppercase font-semibold mb-4 text-blue-600 tracking-[4px]">Full Stack Developer.</div>
+                    <div className="text-sm uppercase font-semibold mb-4 text-blue-600 tracking-[4px]">Software Developer.</div>
                     <h1 className="h1 mb-4">Hello, My name is Aifia Med Amine</h1>
                     <p className="subtitle max-w-[490px] mx-auto xl:mx-0">I am a dedicated and creative software developer with a passion for innovation and problem-solving.</p>
                     <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
