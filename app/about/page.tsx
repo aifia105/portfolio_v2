@@ -256,7 +256,7 @@ const About = () => {
                                 key={index}
                                 className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
                               >
-                                <div className="font-normal w-[600px] mb-4">
+                                <div className="font-normal xl:w-[600px] mb-4">
                                   {item.name}
                                 </div>
                               </div>
