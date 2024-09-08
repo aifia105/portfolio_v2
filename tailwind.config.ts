@@ -1,24 +1,26 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")
-import {nextui} from "@nextui-org/react";
+import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
+import { nextui } from "@nextui-org/react";
 
 const config = {
-
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1400px",
     },
     extend: {
       colors: {
@@ -79,15 +81,15 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       backgroundImage: {
-        hero_shape1: 'url(/shape-2-dark.svg )',
-        hero_shape2: 'url(/shape-1.svg )',
-        dots_light: 'url(/dots-light.svg )',
-        about_shape_light: 'url(/about-light.svg )',
-      }
+        hero_shape1: "url(/shape-2-dark.svg )",
+        hero_shape2: "url(/shape-1.svg )",
+        dots_light: "url(/dots-light.svg )",
+        about_shape_light: "url(/shape-light.svg)",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate"),nextui()],
-  darkMode: "class"
-} satisfies Config
+  plugins: [require("tailwindcss-animate"), nextui()],
+  darkMode: "class",
+} satisfies Config;
 
-export default config
+export default config;
