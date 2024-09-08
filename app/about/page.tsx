@@ -104,8 +104,8 @@ const About = () => {
             {/*image*/}
             <div className="hidden xl:flex flex-1 relative">
               <DevImg
-                containerStyles="bg-shape-light w-[505px] h-[505px] bg-no-repeat relative"
-                ImgSrc=""
+                containerStyles="bg-about_shape_light w-[505px] h-[505px] bg-no-repeat relative"
+                ImgSrc="/coding-bro.svg"
               />
             </div>
             <div className="flex-1">
@@ -252,7 +252,10 @@ const About = () => {
                             "certifications"
                           ).data.map((item: any, index: number) => {
                             return (
-                              <div className="w-2/4 text-center xl:text-left mx-auto xl:mx-0">
+                              <div
+                                key={index}
+                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
+                              >
                                 <div className="font-normal w-[600px] mb-4">
                                   {item.name}
                                 </div>
@@ -268,8 +271,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-8 animate-bounce">
-            <RiArrowDownSLine className="text-3xl text-primary" />
+          <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-5 animate-bounce">
+            <RiArrowDownSLine className="text-4xl text-primary" />
           </div>
         </div>
       </section>
