@@ -103,3 +103,5 @@
 .section-title {
   @apply text-3xl font-bold relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:bg-no-repeat before:bg-center before:w-[24px] before:h-[24px];
 }
+
+
