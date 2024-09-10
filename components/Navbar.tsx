@@ -16,8 +16,8 @@ const NavbarComponent = () => {
 
   return (
     <Navbar isBordered>
-      <NavbarContent justify="start">
-        <NavbarBrand className="">
+      <NavbarContent>
+        <NavbarBrand>
           <img src="/9496034.png" alt="Logo" className="w-10 h-10" />
         </NavbarBrand>
       </NavbarContent>
@@ -26,7 +26,7 @@ const NavbarComponent = () => {
           <NextLink href="/" passHref legacyBehavior>
             <Link
               color="foreground"
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-blue-600 cursor-pointer text-lg"
             >
               Home
             </Link>
@@ -36,7 +36,7 @@ const NavbarComponent = () => {
           <NextLink href="/about" passHref legacyBehavior>
             <Link
               color="foreground"
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-blue-600 cursor-pointer text-lg"
             >
               About
             </Link>
@@ -46,7 +46,7 @@ const NavbarComponent = () => {
           <NextLink href="/projects" passHref legacyBehavior>
             <Link
               color="foreground"
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-blue-600 cursor-pointer text-lg"
             >
               Projects
             </Link>
@@ -56,7 +56,7 @@ const NavbarComponent = () => {
           <NextLink href="/contact" passHref legacyBehavior>
             <Link
               color="foreground"
-              className="hover:text-blue-600 cursor-pointer"
+              className="hover:text-blue-600 cursor-pointer text-lg"
             >
               Contact Me
             </Link>

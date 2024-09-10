@@ -77,13 +77,13 @@ const certificationData = [
     title: "certifications",
     data: [
       {
-        name: "- Supervised Machine Learning: Regression and Classification - Coursera",
+        name: "- Supervised Machine Learning: Regression and Classification",
       },
       {
-        name: "- Supervised Machine Learning: Advanced Learning Algorithms - Coursera",
+        name: "- Supervised Machine Learning: Advanced Learning Algorithms",
       },
       {
-        name: "- Server-side Development with NodeJS, Express and MongoDB - Coursera",
+        name: "- Server-side Development with NodeJS, Express and MongoDB",
       },
     ],
   },
@@ -95,7 +95,7 @@ const About = () => {
   };
   return (
     <>
-      <section className="xl:h-[860px] pb-12 xl:pb-24 xl:pt-20">
+      <section className="xl:h-[820px] pt-10 pb-12 xl:pb-24 xl:pt-20">
         <div className="container mx-auto">
           <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
             About me
@@ -258,6 +258,7 @@ const About = () => {
                               >
                                 <div className="font-normal xl:w-[600px] mb-4">
                                   {item.name}
+                                  <p className="text-blue-600">Coursera</p>
                                 </div>
                               </div>
                             );
@@ -271,8 +272,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-5 animate-bounce">
-            <RiArrowDownSLine className="text-4xl text-primary" />
+          <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-4 animate-bounce">
+            <RiArrowDownSLine className="text-4xl text-blue-600" />
           </div>
         </div>
       </section>

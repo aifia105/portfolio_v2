@@ -22,7 +22,7 @@ const Skills = () => {
     // { src: "/tailwind.svg", alt: "tailwind" },
   ];
   return (
-    <section className="xl:h-[860px] pb-12 xl:pb-24  ">
+    <section className="xl:h-[700px] pb-12 xl:pb-20  ">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           Skills
@@ -31,9 +31,11 @@ const Skills = () => {
         <div className="flex flex-col justify-center items-center h-full">
           <div className="flex gap-x-4 items-center text-[22px] text-blue-600">
             <Bot />
-            <h3 className="capitalize font-bold ">My Toolbox</h3>
+            <h3 className="capitalize font-bold  border-b border-blue-600">
+              My Toolbox
+            </h3>
           </div>
-          <div className="ml-20 w-full grid grid-cols-2 sm:grid-cols-4 gap-4 xl:max-w-[910px] text-center py-6">
+          <div className="ml-16 xl:ml-28 w-full grid grid-cols-2 sm:grid-cols-4 gap-4 xl:max-w-[910px] text-center py-6">
             {skills.map((skill, index) => {
               return (
                 <div

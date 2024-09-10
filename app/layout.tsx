@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 
 import Footer from "@/components/Footer";
 import NavbarComponent from "@/components/Navbar";
+import MobileNavbar from "@/components/MobileNavbar";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -32,7 +33,12 @@ export default function RootLayout({
         )}
       >
         <Providers>
-          <NavbarComponent />
+          <div className="hidden sm:flex">
+            <NavbarComponent />
+          </div>
+          <div className="sm:hidden">
+            <MobileNavbar />
+          </div>
           {children}
           <Footer />
         </Providers>
