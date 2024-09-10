@@ -34,9 +34,12 @@ const Skills = () => {
             <h3 className="capitalize font-bold ">My Toolbox</h3>
           </div>
           <div className="ml-20 w-full grid grid-cols-2 sm:grid-cols-4 gap-4 xl:max-w-[910px] text-center py-6">
-            {skills.map((skill) => {
+            {skills.map((skill, index) => {
               return (
-                <div className="mb-3 shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-full overflow-hidden flex items-center justify-center w-20 h-20">
+                <div
+                  key={index}
+                  className="mb-3 shadow-md shadow-[#040c16] hover:scale-110 duration-500 rounded-full overflow-hidden flex items-center justify-center w-20 h-20"
+                >
                   <img
                     className="w-full h-full object-cover"
                     src={skill.src}
