@@ -17,7 +17,7 @@ const NavbarComponent = () => {
   return (
     <Navbar isBordered>
       <NavbarContent justify="start">
-        <NavbarBrand className="mr-4">
+        <NavbarBrand className="">
           <img src="/9496034.png" alt="Logo" className="w-10 h-10" />
         </NavbarBrand>
       </NavbarContent>

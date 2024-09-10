@@ -276,12 +276,8 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div>
-        <Skills />
-      </div>
-      <div>
-        <Experience />
-      </div>
+      <Skills />
+      <Experience />
     </>
   );
 };
