@@ -78,32 +78,42 @@ const Experience = () => {
                 <TimelineDot
                   color="primary"
                   variant="outlined"
-                  sx={{ width: 45, height: 45 }}
-                ></TimelineDot>
-                <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                  sx={{
+                    width: 45,
+                    height: 45,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Briefcase />
+                </TimelineDot>
+                <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography
-                  className="font-semibold"
+                  className="font-semibold text-blue-600"
                   variant="h4"
                   component="span"
                 >
                   Rooly S
-                  <Typography className="text-sm">2024-Present</Typography>
+                  <Typography className="text-sm text-gray-400">
+                    2024 - Present
+                  </Typography>
                 </Typography>
-                <Typography variant="h5" className="font-bold">
+                <Typography variant="h6" className="font-bold">
                   Shrimp Cultivation Management Platform
                 </Typography>
                 <Typography className="flex gap-x-2">
-                  <p className="text-blue-600 text-lg">Role:</p>{" "}
-                  <p className="text-lg text-gray-300">
+                  {/* <p className="text-blue-600 text-lg">Role:</p>{" "} */}
+                  <p className="text-lg text-gray-400">
                     {" "}
                     Fullstack Developer, Backend Specialist
                   </p>
                 </Typography>
                 <button
                   onClick={handleOpenDetails}
-                  className="text-sm text-gray-300 underline"
+                  className="text-sm text-blue-600 underline"
                 >
                   Details
                 </button>
