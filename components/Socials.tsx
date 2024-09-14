@@ -22,11 +22,11 @@ const icons = [
     name: <RiGithubFill />,
   },
   {
-    path: "https://www.instagram.com/mohamed.aifia/?hl=fr",
+    path: "https://x.com/CrafterByte",
     name: <RiTwitterXFill />,
   },
   {
-    path: "https://www.facebook.com/mohamed.aifia.31",
+    path: "https://www.reddit.com/user/creepy05/",
     name: <RiRedditFill />,
   },
 ];
