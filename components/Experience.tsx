@@ -65,7 +65,7 @@ const Experience = () => {
 
   return (
     <>
-      <section className="xl:ml-12 ml-2 xl:h-[600px] pb-12 xl:pb-24">
+      <section className="xl:ml-12 ml-2 xl:h-[500px] pb-12 xl:pb-24">
         <div className="container mx-auto">
           <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
             Experience
@@ -97,7 +97,7 @@ const Experience = () => {
                   component="span"
                 >
                   Rooly S
-                  <Typography className="text-sm text-gray-400">
+                  <Typography className="text-sm text-white">
                     2024 - Present
                   </Typography>
                 </Typography>
@@ -117,6 +117,35 @@ const Experience = () => {
                 >
                   Details
                 </button>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot
+                  color="primary"
+                  variant="outlined"
+                  sx={{
+                    width: 45,
+                    height: 45,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Briefcase />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography
+                  className="font-semibold text-blue-600"
+                  variant="h4"
+                  component="span"
+                >
+                  CMS Plus
+                </Typography>
+                <Typography>Because this is the life you love!</Typography>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
