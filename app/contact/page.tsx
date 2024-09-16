@@ -35,17 +35,17 @@ const Contact = () => {
       <div className="container mx-auto">
         <h2 className="section-title mb-4  text-center mx-auto">Contact me</h2>
 
-        <div className="lg:flex pt-4 justify-between gap-x-10">
+        <div className="flex flex-col xl:flex-row pt-4 justify-between gap-x-10">
           {/* Left Section */}
-          <div className="w-full lg:w-1/2 relative">
+          <div className="w-1/2 relative">
             <Image
               src="/world.svg"
               alt="Background"
               layout="fill"
               objectFit="cover"
-              className="opacity-50 text-blue-600 hidden lg:block"
+              className="opacity-50 text-blue-600 hidden xl:flex"
             />
-            <div className="absolute  flex flex-col justify-center p-8">
+            <div className="absolute  flex flex-col justify-center p-8 ">
               <h2 className="text-3xl  font-bold mb-2">
                 Don&apos;t Be Shy, Say Hi!
               </h2>
@@ -82,7 +82,7 @@ const Contact = () => {
           </div>
 
           {/* Right Section */}
-          <div className=" items-center w-full lg:w-1/2 p-8">
+          <div className=" items-center w-1/2 p-8">
             <div className="flex gap-x-4 items-center justify-center mb-6 text-[22px] text-blue-600">
               <Mail />
               <h3 className="capitalize font-bold ">
