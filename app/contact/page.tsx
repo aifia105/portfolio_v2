@@ -47,7 +47,7 @@ const Contact = () => {
             />
             <div className="absolute  flex flex-col justify-center p-8">
               <h2 className="text-3xl  font-bold mb-2">
-                Don’t Be Shy, Say Hi!
+                Don&apos;t Be Shy, Say Hi!
               </h2>
               <p className="text-muted-foreground text-lg mb-2 font-light max-w-xl mx-auto xl:mx-0">
                 Feel free to reach out for collaborations, opportunities, or
