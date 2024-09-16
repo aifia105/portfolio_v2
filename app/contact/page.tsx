@@ -85,7 +85,9 @@ const Contact = () => {
           <div className=" items-center w-full lg:w-1/2 p-8">
             <div className="flex gap-x-4 items-center justify-center mb-6 text-[22px] text-blue-600">
               <Mail />
-              <h3 className="capitalize font-bold ">Let's Get in Touch!</h3>
+              <h3 className="capitalize font-bold ">
+                Let&apos;s Get in Touch!
+              </h3>
             </div>
             <form className="space-y-6">
               <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
