@@ -51,7 +51,7 @@ const Contact = () => {
               </h2>
               <p className="text-muted-foreground text-lg mb-2 font-light max-w-xl mx-auto xl:mx-0">
                 Feel free to reach out for collaborations, opportunities, or
-                just to say hello. I'd love to hear from you!
+                just to say hello. I&apos;d love to hear from you!
               </p>
               <div className="flex mb-3 ">
                 <div className="flex items-center gap-x-4 mx-auto xl:mx-0">
