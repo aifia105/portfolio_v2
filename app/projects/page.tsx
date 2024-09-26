@@ -17,8 +17,8 @@ const Projects = () => {
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {projects.map((project) => (
-            <div className="flex justify-center items-center  p-4">
+          {projects.map((project, index) => (
+            <div key={index} className="flex justify-center items-center  p-4">
               <Card
                 isBlurred
                 className="max-w-[600px] h-[400px] hover:scale-110 duration-500"
