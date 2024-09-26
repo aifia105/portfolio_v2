@@ -95,12 +95,14 @@ const About = () => {
   };
   return (
     <>
-      <section className="xl:h-[820px] pt-10 pb-12 xl:pb-24 xl:pt-16">
+      <section className="xl:h-[820px] pt-10 pb-12 xl:pb-24 xl:pt-16 ">
         <div className="container mx-auto">
-          <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-            About me
-          </h2>
-          <div className="flex flex-col xl:flex-row">
+          <div className="ml-7">
+            <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto ">
+              About me
+            </h2>
+          </div>
+          <div className="flex flex-col xl:flex-row xl:ml-14">
             {/*image*/}
             <div className="hidden xl:flex flex-1 relative">
               <DevImg
@@ -156,7 +158,7 @@ const About = () => {
                       </div>
                       <div className="flex flex-col gap-y-2">
                         <div className="text-blue-600">Languages</div>
-                        <div className="border-b border-border"></div>
+                        <div className="border-b border-border mb-4"></div>
                         <div>English, French, Arab</div>
                       </div>
                     </div>
@@ -272,9 +274,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-4 animate-bounce">
+          {/* <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-4 animate-bounce">
             <RiArrowDownSLine className="text-4xl text-blue-600" />
-          </div>
+          </div> */}
         </div>
       </section>
       <Skills />

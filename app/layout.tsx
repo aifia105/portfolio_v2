@@ -40,7 +40,7 @@ export default function RootLayout({
             <MobileNavbar />
           </div>
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </Providers>
       </body>
     </html>

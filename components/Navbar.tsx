@@ -18,7 +18,11 @@ const NavbarComponent = () => {
     <Navbar isBordered>
       <NavbarContent>
         <NavbarBrand>
-          <img src="/9496034.png" alt="Logo" className="w-10 h-10" />
+          <img
+            src="/9496034.png"
+            alt="Logo"
+            className="flex items-start justify-start w-10 h-10"
+          />
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">

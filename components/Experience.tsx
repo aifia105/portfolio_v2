@@ -8,7 +8,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
-import { Briefcase } from "lucide-react";
+import { ArrowBigRight, ArrowRight, Briefcase } from "lucide-react";
 import { useState } from "react";
 import {
   Modal,
@@ -65,11 +65,13 @@ const Experience = () => {
 
   return (
     <>
-      <section className="xl:ml-12 ml-2 xl:h-[500px] pb-12 xl:pb-24">
+      <section className="xl:ml-5 ml-2 xl:h-[500px] pb-12 xl:pb-24">
         <div className="container mx-auto">
-          <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-            Experience
-          </h2>
+          <div className="ml-0">
+            <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+              Experience
+            </h2>
+          </div>
 
           <Timeline className="" position="alternate">
             <TimelineItem>
@@ -98,7 +100,7 @@ const Experience = () => {
                 >
                   Rooly S
                   <Typography className="text-sm text-white">
-                    2024 - Present
+                    Mar 2024 - Present
                   </Typography>
                 </Typography>
                 <Typography variant="h6" className="font-bold">
@@ -111,12 +113,11 @@ const Experience = () => {
                     Fullstack Developer, Backend Specialist
                   </p>
                 </Typography>
-                <button
-                  onClick={handleOpenDetails}
-                  className="text-sm text-blue-600 underline"
-                >
-                  Details
-                </button>
+                <div onClick={handleOpenDetails} className="flex gap-1 ">
+                  <button className="text-base text-blue-600 underline">
+                    Details
+                  </button>
+                </div>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -144,8 +145,22 @@ const Experience = () => {
                   component="span"
                 >
                   CMS Plus
+                  <Typography className="text-sm text-white">
+                    Feb 2023 - May 2023
+                  </Typography>
                 </Typography>
-                <Typography>Because this is the life you love!</Typography>
+                <Typography variant="h6" className="font-bold">
+                  Private Schools Management Platform
+                </Typography>
+                <Typography className=" gap-x-2">
+                  {/* <p className="text-blue-600 text-lg">Role:</p>{" "} */}
+                  <p className="text-lg text-gray-400"> Fullstack Developer</p>
+                </Typography>
+                <div onClick={handleOpenDetails} className=" gap-1 ">
+                  <button className="text-base text-blue-600 underline">
+                    Details
+                  </button>
+                </div>
               </TimelineContent>
             </TimelineItem>
           </Timeline>

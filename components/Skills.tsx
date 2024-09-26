@@ -31,9 +31,7 @@ const Skills = () => {
         <div className="flex flex-col justify-center items-center h-full">
           <div className="flex gap-x-4 items-center text-[22px] text-blue-600">
             <Bot />
-            <h3 className="capitalize font-bold  border-b border-blue-600">
-              My Toolbox
-            </h3>
+            <h3 className="capitalize font-bold  ">My Toolbox</h3>
           </div>
           <div className="ml-16 xl:ml-28 w-full grid grid-cols-2 sm:grid-cols-4 gap-4 xl:max-w-[910px] text-center py-6">
             {skills.map((skill, index) => {
