@@ -274,9 +274,9 @@ const About = () => {
             </div>
           </div>
 
-          {/* <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-4 animate-bounce">
+          <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-7 animate-bounce">
             <RiArrowDownSLine className="text-4xl text-blue-600" />
-          </div> */}
+          </div>
         </div>
       </section>
       <Skills />

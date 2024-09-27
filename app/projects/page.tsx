@@ -6,9 +6,11 @@ import {
   Divider,
   Link,
   Image,
+  Button,
 } from "@nextui-org/react";
 
 const Projects = () => {
+  const canTPreview = true;
   const projects = ["1", "2", "3", "4"];
   return (
     <section className="xl:h-[1100px] pt-10 pb-12 xl:pb-24 xl:pt-16">
@@ -21,9 +23,10 @@ const Projects = () => {
             <div key={index} className="flex justify-center items-center  p-4">
               <Card
                 isBlurred
-                className="max-w-[600px] h-[400px] hover:scale-110 duration-500"
+                className="w-[600px] h-[400px] hover:scale-110 duration-500"
               >
-                <CardHeader className="flex gap-3">
+                <Divider />
+                <CardBody>
                   <Image
                     radius="sm"
                     alt="nextui logo"
@@ -35,9 +38,6 @@ const Projects = () => {
                     <p className="text-md">NextUI</p>
                     <p className="text-small text-default-500">nextui.org</p>
                   </div>
-                </CardHeader>
-                <Divider />
-                <CardBody>
                   <p>
                     Make beautiful websites regardless of your design
                     experience.
@@ -45,13 +45,24 @@ const Projects = () => {
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                  <Link
-                    isExternal
-                    showAnchorIcon
-                    href="https://github.com/nextui-org/nextui"
-                  >
-                    Visit source code on GitHub.
-                  </Link>
+                  <div className="flex gap-2">
+                    <Button
+                      type="submit"
+                      className="gap-x-2 bg-transparent border-1 hover:bg-blue-600/70 items-center justify-center"
+                    >
+                      Github
+                    </Button>
+                    <Button
+                      type="submit"
+                      className={`gap-x-2 bg-transparent border-1  items-center justify-center ${
+                        canTPreview
+                          ? `opacity-50  cursor-not-allowed`
+                          : "hover:bg-blue-600/70"
+                      }`}
+                    >
+                      Preview
+                    </Button>
+                  </div>
                 </CardFooter>
               </Card>
             </div>
