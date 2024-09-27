@@ -10,8 +10,40 @@ import {
 } from "@nextui-org/react";
 
 const Projects = () => {
-  const canTPreview = true;
-  const projects = ["1", "2", "3", "4"];
+  const projects = [
+    {
+      name: "example",
+      description: "example",
+      image: "example",
+      github: "example",
+      stack: ["example", "example"],
+      cantPreview: true,
+    },
+    {
+      name: "example",
+      description: "example",
+      image: "example",
+      github: "example",
+      stack: ["example", "example"],
+      cantPreview: false,
+    },
+    {
+      name: "example",
+      description: "example",
+      image: "example",
+      github: "example",
+      stack: ["example", "example"],
+      cantPreview: true,
+    },
+    {
+      name: "example",
+      description: "example",
+      image: "example",
+      github: "example",
+      stack: ["example", "example"],
+      cantPreview: false,
+    },
+  ];
   return (
     <section className="xl:h-[1100px] pt-10 pb-12 xl:pb-24 xl:pt-16">
       <div className="container mx-auto">
@@ -27,6 +59,9 @@ const Projects = () => {
               >
                 <Divider />
                 <CardBody>
+                  <div>
+                    <p>{project.name}</p>
+                  </div>
                   <Image
                     radius="sm"
                     alt="nextui logo"
@@ -35,13 +70,18 @@ const Projects = () => {
                     width={40}
                   />
                   <div className="flex flex-col">
-                    <p className="text-md">NextUI</p>
-                    <p className="text-small text-default-500">nextui.org</p>
+                    <p className="text-md">{project.description}</p>
                   </div>
-                  <p>
-                    Make beautiful websites regardless of your design
-                    experience.
-                  </p>
+                  <div className="flex items-center gap-x-2">
+                    <span className="text-sm text-blue-600">Stack:</span>
+                    <div className="flex gap-2">
+                      {project.stack.map((stack, index) => (
+                        <span key={index} className="text-xs">
+                          {stack}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </CardBody>
                 <Divider />
                 <CardFooter>
@@ -55,7 +95,7 @@ const Projects = () => {
                     <Button
                       type="submit"
                       className={`gap-x-2 bg-transparent border-1  items-center justify-center ${
-                        canTPreview
+                        project.cantPreview
                           ? `opacity-50  cursor-not-allowed`
                           : "hover:bg-blue-600/70"
                       }`}
