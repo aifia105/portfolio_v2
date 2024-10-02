@@ -33,9 +33,11 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
-              <Button className="gap-x-2 bg-white hover:bg-primary/70">
-                Download CV <Download size={18} />
-              </Button>
+              <a href="/Aifia_Mohamed_Amine_CV.pdf" download>
+                <Button className="gap-x-2 bg-white hover:bg-primary/70">
+                  Download CV <Download size={18} />
+                </Button>
+              </a>
             </div>
             <Socials
               containerStyles="flex pl-3 gap-x-6 mx-auto xl:mx-0"

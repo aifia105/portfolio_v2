@@ -8,6 +8,7 @@ import {
   Image,
   Button,
 } from "@nextui-org/react";
+import { Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -28,30 +29,6 @@ const Projects = () => {
       ],
       cantPreview: true,
     },
-    {
-      name: "example",
-      description: "example",
-      image: "example",
-      github: "example",
-      stack: ["example", "example"],
-      cantPreview: false,
-    },
-    {
-      name: "example",
-      description: "example",
-      image: "example",
-      github: "example",
-      stack: ["example", "example"],
-      cantPreview: true,
-    },
-    {
-      name: "example",
-      description: "example",
-      image: "example",
-      github: "example",
-      stack: ["example", "example"],
-      cantPreview: false,
-    },
   ];
   return (
     <section className="xl:h-[1100px] pt-10 pb-12 xl:pb-24 xl:pt-16">
@@ -64,7 +41,7 @@ const Projects = () => {
             <div key={index} className="flex justify-center items-center  p-4">
               <Card
                 isBlurred
-                className="w-[600px] h-fit hover:scale-110 duration-500 p-4"
+                className="w-[600px] h-fit hover:scale-105 duration-500 p-3"
               >
                 <Divider />
                 <CardBody className="space-y-6">
@@ -101,12 +78,15 @@ const Projects = () => {
                 <Divider />
                 <CardFooter>
                   <div className="flex gap-2">
-                    <Button
-                      type="submit"
-                      className="gap-x-2 bg-transparent border-1 hover:bg-blue-600/70 items-center justify-center"
-                    >
-                      Github
-                    </Button>
+                    <Link href={project.github} target="_blank">
+                      <Button
+                        type="submit"
+                        className="gap-x-2 bg-transparent border-1 hover:bg-blue-600/70 items-center justify-center"
+                      >
+                        Github
+                        <Github />
+                      </Button>
+                    </Link>
                     <Button
                       type="submit"
                       className={`gap-x-2 bg-transparent border-1  items-center justify-center ${
