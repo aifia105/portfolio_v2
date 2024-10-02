@@ -46,12 +46,12 @@ const qualificationData = [
       {
         university: "Esprit - Private School of Engineering and Technology",
         qualification: "Software Engineering Degree",
-        years: "2024 - Present",
+        years: "Sep 2024 - Present",
       },
       {
         university: "Isamm - Higher Institute of Multimedia Arts of Manouba",
         qualification: "Bachelor of Computer Science",
-        years: "2020 - 2023",
+        years: "Sep 2020 - Jun 2023",
       },
     ],
   },
@@ -61,12 +61,12 @@ const qualificationData = [
       {
         Company: "Rooly S",
         role: "Full-stack developer",
-        years: "2024 - Present",
+        years: "Mar 2024 - Present",
       },
       {
         Company: "CMS Plus",
         role: "Full-stack developer Intern",
-        years: " 2023",
+        years: "Mar 2023 - May 2023",
       },
     ],
   },

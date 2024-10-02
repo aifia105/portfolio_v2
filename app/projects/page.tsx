@@ -12,11 +12,20 @@ import {
 const Projects = () => {
   const projects = [
     {
-      name: "example",
-      description: "example",
-      image: "example",
-      github: "example",
-      stack: ["example", "example"],
+      name: "Fullstack Responsive E-Commerce App",
+      description:
+        "Full-stack responsive eCommerce platform with user authentication, user account management, file upload, admin dashboard.",
+      image: "/1.PNG",
+      github: "https://github.com/aifia105/Ecommerce-Shop-api",
+      stack: [
+        "Angular",
+        "Ngrx",
+        "Spring Boot",
+        "MySQL",
+        "Swagger",
+        "JWT",
+        "Spring JPA",
+      ],
       cantPreview: true,
     },
     {
@@ -55,28 +64,34 @@ const Projects = () => {
             <div key={index} className="flex justify-center items-center  p-4">
               <Card
                 isBlurred
-                className="w-[600px] h-[400px] hover:scale-110 duration-500"
+                className="w-[600px] h-fit hover:scale-110 duration-500 p-4"
               >
                 <Divider />
-                <CardBody>
+                <CardBody className="space-y-6">
                   <div>
-                    <p>{project.name}</p>
+                    <p className="font-bold text-2xl ">{project.name}</p>
                   </div>
-                  <Image
-                    radius="sm"
-                    alt="nextui logo"
-                    height={40}
-                    src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                    width={40}
-                  />
+                  <div className="flex items-center justify-center">
+                    <Image
+                      radius="sm"
+                      alt="nextui logo"
+                      height={100}
+                      src={project.image}
+                      className="w-full"
+                    />
+                  </div>
                   <div className="flex flex-col">
-                    <p className="text-md">{project.description}</p>
+                    <p className="text-md font-semibold">
+                      {project.description}
+                    </p>
                   </div>
                   <div className="flex items-center gap-x-2">
-                    <span className="text-sm text-blue-600">Stack:</span>
+                    <span className="text-sm font-semibold text-blue-600">
+                      Stack:
+                    </span>
                     <div className="flex gap-2">
                       {project.stack.map((stack, index) => (
-                        <span key={index} className="text-xs">
+                        <span key={index} className="text-sm">
                           {stack}
                         </span>
                       ))}
