@@ -3,7 +3,7 @@ export const projects = [
     name: "Pokémon Stats Explorer",
     description:
       "A web application for explore Pokémon with their detailed statistics",
-    image: "/3.PNG",
+    image: "/3.png",
     github: "https://github.com/aifia105/Pokemon-Stats-Explorer",
     stack: ["NextJS", "Tailwind CSS", "GraphQL", "Chart JS", "Apollo Client"],
     cantPreview: false,
