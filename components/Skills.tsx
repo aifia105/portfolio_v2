@@ -24,9 +24,11 @@ const Skills = () => {
   return (
     <section className="xl:h-[700px] pb-12 xl:pb-20  ">
       <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-          Skills
-        </h2>
+        <div className="-ml-2 sm:-ml-1">
+          <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+            Skills
+          </h2>
+        </div>
 
         <div className="flex flex-col justify-center items-center h-full">
           <div className="flex gap-x-4 items-center text-[22px] text-blue-600">

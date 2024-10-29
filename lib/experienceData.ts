@@ -66,6 +66,5 @@ export const experiencesData = [
       "MongoDB Atlas",
       "Postman",
     ],
-    css: "",
   },
 ];

@@ -1,5 +1,5 @@
+"use client";
 import DevImg from "../../components/DevImg";
-import Image from "next/image";
 import {
   Tabs,
   TabsContent,
@@ -8,13 +8,10 @@ import {
 } from "../../components/ui/tabs";
 import {
   User2,
-  MailIcon,
   HomeIcon,
-  PhoneCall,
   GraduationCap,
   Calendar,
   Briefcase,
-  University,
 } from "lucide-react";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -96,9 +93,9 @@ const About = () => {
   return (
     <>
       <section className="xl:h-[820px] pt-10 pb-12 xl:pb-24 xl:pt-16 ">
-        <div className="container mx-auto">
-          <div className="ml-7">
-            <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto ">
+        <div className="container mx-auto" suppressHydrationWarning>
+          <div className="-ml-3 sm:ml-4">
+            <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
               About me
             </h2>
           </div>
@@ -156,8 +153,10 @@ const About = () => {
                           );
                         })}
                       </div>
-                      <div className="flex flex-col gap-y-2">
-                        <div className="text-blue-600">Languages</div>
+                      <div className="flex flex-col gap-y-2 ">
+                        <div className="text-blue-600 mr-2 sm:mr-1">
+                          Languages
+                        </div>
                         <div className="border-b border-border mb-4"></div>
                         <div>English, French, Arab</div>
                       </div>

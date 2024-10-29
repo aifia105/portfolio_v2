@@ -46,7 +46,7 @@ const Experience = () => {
   return (
     <>
       <section className="xl:ml-5 ml-2 xl:h-[500px] pb-12 xl:pb-24">
-        <div className="container mx-auto">
+        <div className="container mx-auto " suppressHydrationWarning>
           <div className="ml-0">
             <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
               Experience
@@ -75,22 +75,20 @@ const Experience = () => {
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: "12px", px: 2 }}>
                   <Typography
-                    className="font-semibold text-blue-600"
+                    className="font-medium text-blue-600"
                     variant="h4"
                     component="span"
                   >
                     {experience.company}
-                    <Typography className="text-sm text-white">
+                    <Typography className="text-md text-white">
                       {experience.duration}
                     </Typography>
                   </Typography>
                   <Typography variant="h6" className="font-bold">
                     {experience.title}
                   </Typography>
-                  <Typography className=" gap-x-2">
-                    <p className={`text-lg text-gray-400 ${experience?.css}`}>
-                      {experience.application}
-                    </p>
+                  <Typography className=" gap-x-2 text-lg text-gray-400">
+                    {experience.application}
                   </Typography>
                   <div
                     onClick={() => handleOpenDetails(experience)}
@@ -114,21 +112,22 @@ const Experience = () => {
           onOpenChange={handleCloseDetails}
           scrollBehavior="inside"
           backdrop="blur"
+          suppressHydrationWarning
         >
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">
+                <ModalHeader className="flex flex-col text-xl gap-1 mt-2">
                   {selectedExperience.title}
                 </ModalHeader>
                 <ModalBody>
-                  <p className="text-lg font-bold text-blue-600">
+                  <div className="text-xl font-bold text-blue-600">
                     {selectedExperience.company}
-                  </p>
-                  <p>{selectedExperience.duration}</p>
-                  <p>{selectedExperience.description}</p>
+                  </div>
+                  <div>{selectedExperience.duration}</div>
+                  <div>{selectedExperience.description}</div>
                   <div className="flex flex-wrap gap-y-4 items-center">
-                    <p className="text-blue-600 text-lg">Details:</p>
+                    <div className="text-blue-600 text-lg">Details:</div>
                     {Object.entries(selectedExperience.details).map(
                       ([key, value], index) => (
                         <div key={index} className="text-sm gap-x-1">
@@ -140,11 +139,11 @@ const Experience = () => {
                     )}
                   </div>
                   <div className="flex flex-wrap gap-x-2 items-center">
-                    <p className="text-blue-600 text-lg">Technologies:</p>
+                    <div className="text-blue-600 text-lg">Technologies:</div>
                     {selectedExperience.skills.map((skill, index) => (
-                      <p key={index} className="text-sm">
+                      <div key={index} className="text-sm">
                         {skill}
-                      </p>
+                      </div>
                     ))}
                   </div>
                 </ModalBody>

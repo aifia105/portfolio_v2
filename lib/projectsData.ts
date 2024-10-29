@@ -1,8 +1,27 @@
 export const projects = [
   {
-    name: "Fullstack Responsive E-Commerce App",
+    name: "Pokémon Stats Explorer",
     description:
-      "Full-stack responsive eCommerce platform with user authentication, user account management, file upload, admin dashboard.",
+      "A web application for explore Pokémon with their detailed statistics",
+    image: "/3.PNG",
+    github: "https://github.com/aifia105/Pokemon-Stats-Explorer",
+    stack: ["NextJS", "Tailwind CSS", "GraphQL", "Chart JS", "Apollo Client"],
+    cantPreview: false,
+    previewUrl: "https://pokemon-cards-omega-pink.vercel.app/",
+  },
+  {
+    name: "Responsive Car Rental Landing Website",
+    description:
+      "A Responsive landing page for car rental with state management.",
+    image: "/2.png",
+    github: "https://github.com/aifia105/Car_renting-landing-page",
+    stack: ["Angular", "Ngrx", "Tailwind CSS"],
+    cantPreview: false,
+    previewUrl: "https://car-renting-landing-page.vercel.app/home",
+  },
+  {
+    name: "Fullstack Responsive E-Commerce App",
+    description: "A Full-stack responsive eCommerce platform.",
     image: "/1.PNG",
     github: "https://github.com/aifia105/Ecommerce-Shop-api",
     stack: [
@@ -10,23 +29,12 @@ export const projects = [
       "Ngrx",
       "Spring Boot",
       "MySQL",
-      "Swagger",
       "JWT",
       "Spring JPA",
       "REST API",
     ],
     cantPreview: true,
     previewUrl: "",
-  },
-  {
-    name: "Responsive Car Rental Landing Website",
-    description:
-      "Responsive landing website for car rental application with state management.",
-    image: "/2.png",
-    github: "https://github.com/aifia105/Car_renting-landing-page",
-    stack: ["Angular", "Ngrx", "Tailwind CSS"],
-    cantPreview: false,
-    previewUrl: "https://car-renting-landing-page.vercel.app/home",
   },
 ];
 

@@ -44,7 +44,7 @@ const MobileNavbar = () => {
         />
       </NavbarContent>
 
-      <NavbarMenu className="flex items-center pt-52 gap-6">
+      <NavbarMenu className="flex items-center pt-40 gap-10">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
