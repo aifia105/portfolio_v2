@@ -7,7 +7,7 @@ import {
   NavbarItem,
   Link,
 } from "@nextui-org/react";
-import NextLink from "next/link"; // Import Next.js Link
+import NextLink from "next/link"; 
 import { usePathname } from "next/navigation";
 import React from "react";
 
