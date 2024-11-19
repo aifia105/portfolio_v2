@@ -10,7 +10,7 @@ export const projects = [
     previewUrl: "https://pokemon-cards-omega-pink.vercel.app/",
   },
   {
-    name: "Responsive Car Rental Landing Website",
+    name: "Responsive Car Rental Website",
     description:
       "A Responsive landing page for car rental with state management.",
     image: "/2.png",
@@ -20,7 +20,7 @@ export const projects = [
     previewUrl: "https://car-renting-landing-page.vercel.app/home",
   },
   {
-    name: "Fullstack Responsive E-Commerce App",
+    name: "Fullstack Responsive E-Commerce Platform",
     description: "A Full-stack responsive eCommerce platform.",
     image: "/1.PNG",
     github: "https://github.com/aifia105/Ecommerce-Shop-api",

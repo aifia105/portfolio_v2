@@ -1,26 +1,6 @@
+import { skills } from "@/lib/skillsData";
 import { Bot } from "lucide-react";
 const Skills = () => {
-  const skills = [
-    { src: "/javascript.svg", alt: "JavaScript" },
-    { src: "/typescript.svg", alt: "TypeScript" },
-    { src: "/java.svg", alt: "java" },
-    { src: "/python.svg", alt: "python" },
-    { src: "/bash.svg", alt: "bash" },
-    { src: "/angular.png", alt: "angular" },
-    { src: "/next-js.svg", alt: "next" },
-    { src: "/node.svg", alt: "node" },
-    { src: "/nestjs.svg", alt: "nestJs" },
-    { src: "/spring-boot.svg", alt: "spring-boot" },
-    { src: "/mongodb.svg", alt: "mongodb" },
-    { src: "/mysql.svg", alt: "mysql" },
-    { src: "/mongoose.svg", alt: "mongoose" },
-    { src: "/git.svg", alt: "git" },
-    { src: "/github.svg", alt: "github" },
-    { src: "/docker.svg", alt: "docker" },
-    // { src: "/ngrx.svg", alt: "ngrx" },
-    // { src: "/redux.svg", alt: "redux" },
-    // { src: "/tailwind.svg", alt: "tailwind" },
-  ];
   return (
     <section className="xl:h-[700px] pb-12 xl:pb-20  ">
       <div className="container mx-auto">
