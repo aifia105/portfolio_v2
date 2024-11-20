@@ -95,11 +95,11 @@ const About = () => {
       <section className="xl:h-[820px] pt-10 pb-12 xl:pb-24 xl:pt-16 ">
         <div className="container mx-auto" suppressHydrationWarning>
           <div className="-ml-3 sm:ml-4">
-            <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+            <h2 className="section-title mb-8 xl:mb-24 text-center mx-auto">
               About me
             </h2>
           </div>
-          <div className="flex flex-col xl:flex-row xl:ml-14">
+          <div className="flex flex-col gap-x-10 xl:flex-row xl:ml-10">
             {/*image*/}
             <div className="hidden xl:flex flex-1 relative">
               <DevImg

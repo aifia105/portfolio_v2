@@ -15,16 +15,13 @@ const Projects = () => {
   return (
     <section className="min-h-screen pt-10 pb-12 xl:pb-24 xl:pt-16">
       <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+        <h2 className="section-title mb-8 xl:mb-24 text-center mx-auto">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.map((project, index) => (
-            <div key={index} className="flex justify-center items-center  p-4">
-              <Card
-                isBlurred
-                className="w-[650px] h-fit hover:scale-105 duration-500 p-3"
-              >
+            <div key={index} className="flex justify-center items-center  p-3">
+              <Card className="w-[650px] bg-blue-700/10 h-fit hover:scale-105 duration-500 p-3">
                 <CardBody className="space-y-6">
                   <div>
                     <p className="font-bold text-lg sm:text-2xl ">

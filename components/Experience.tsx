@@ -45,7 +45,7 @@ const Experience = () => {
 
   return (
     <>
-      <section className="xl:ml-5 ml-2 xl:h-[500px] pb-12 xl:pb-24">
+      <section className="xl:mr-8 ml-2 xl:h-[500px] pb-12 xl:pb-24">
         <div className="container mx-auto " suppressHydrationWarning>
           <div className="ml-0">
             <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">

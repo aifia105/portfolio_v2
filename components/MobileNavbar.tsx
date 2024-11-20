@@ -36,7 +36,7 @@ const MobileNavbar = () => {
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="flex justify-between items-center w-full">
         <NavbarBrand>
-          <img src="/9496034.png" alt="Logo" className="w-10 h-10" />
+          <img src="/9496034.png" alt="Logo" className="w-12 h-12" />
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

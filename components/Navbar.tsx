@@ -7,7 +7,7 @@ import {
   NavbarItem,
   Link,
 } from "@nextui-org/react";
-import NextLink from "next/link"; 
+import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
@@ -21,7 +21,7 @@ const NavbarComponent = () => {
           <img
             src="/9496034.png"
             alt="Logo"
-            className="flex items-start justify-start w-10 h-10"
+            className="flex items-start justify-start w-12 h-12"
           />
         </NavbarBrand>
       </NavbarContent>

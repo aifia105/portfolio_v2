@@ -2,9 +2,9 @@ import { skills } from "@/lib/skillsData";
 import { Bot } from "lucide-react";
 const Skills = () => {
   return (
-    <section className="xl:h-[700px] pb-12 xl:pb-20  ">
+    <section className="xl:h-[700px] pb-12 xl:pb-20  xl:mr-4">
       <div className="container mx-auto">
-        <div className="-ml-2 sm:-ml-1">
+        <div className="-ml-2 sm:-ml-3">
           <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
             Skills
           </h2>
