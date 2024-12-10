@@ -110,7 +110,7 @@ const About = () => {
             >
               <DevImg
                 containerStyles="bg-about_shape_light w-[505px] h-[505px] bg-no-repeat relative"
-                ImgSrc="/coding-bro.svg"
+                ImgSrc="icons/coding-bro.svg"
               />
             </motion.div>
             <motion.div

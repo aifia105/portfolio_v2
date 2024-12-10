@@ -3,7 +3,7 @@ export const projects = [
     name: "Pokémon Stats Explorer",
     description:
       "A web application for explore Pokémon with their detailed statistics",
-    image: "/3.png",
+    image: "projects/PokemonStatApp.png",
     github: "https://github.com/aifia105/Pokemon-Stats-Explorer",
     stack: ["NextJS", "Tailwind CSS", "GraphQL", "Chart JS", "Apollo Client"],
     cantPreview: false,
@@ -13,7 +13,7 @@ export const projects = [
     name: "Responsive Car Rental Website",
     description:
       "A Responsive landing page for car rental with state management.",
-    image: "/2.png",
+    image: "projects/CarRentalApp.png",
     github: "https://github.com/aifia105/Car_renting-landing-page",
     stack: ["Angular", "Ngrx", "Tailwind CSS"],
     cantPreview: false,
@@ -22,7 +22,7 @@ export const projects = [
   {
     name: "Fullstack Responsive E-Commerce Platform",
     description: "A Full-stack responsive eCommerce platform.",
-    image: "/1.PNG",
+    image: "projects/E-commerceApp.PNG",
     github: "https://github.com/aifia105/Ecommerce-Shop-api",
     stack: [
       "Angular",

@@ -92,7 +92,7 @@ const Hero = () => {
                 containerStyles={
                   "bg-hero_shape2 w-[510px] h-[462px] bg-no-repeat relative bg-bottom "
                 }
-                ImgSrc="/hero.svg"
+                ImgSrc="/icons/hero.svg"
               />
             </motion.div>
           </motion.div>

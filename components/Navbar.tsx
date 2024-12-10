@@ -19,7 +19,7 @@ const NavbarComponent = () => {
       <NavbarContent>
         <NavbarBrand>
           <img
-            src="/9496034.png"
+            src="/logo.png"
             alt="Logo"
             className="flex items-start justify-start w-12 h-12"
           />

@@ -45,11 +45,26 @@ const Projects = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const fadeUp = {
+    initial: { opacity: 0, y: 50 },
+    animate: { opacity: 1, y: 0 },
+  };
+
   return (
     <section className="min-h-screen pt-16 pb-16 xl:pb-24 xl:pt-28">
       <div className="container mx-auto">
         <div>
-          <h2 className="section-title mb-16 text-center mx-auto">Projects</h2>
+          <motion.div
+            variants={fadeUp}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="section-title mb-16 text-center mx-auto">
+              Projects
+            </h2>
+          </motion.div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.map((project, index) => (

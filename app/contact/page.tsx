@@ -47,7 +47,7 @@ const Contact = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <Image
-              src="/world.svg"
+              src="icons/world.svg"
               alt="Background"
               layout="fill"
               objectFit="cover"

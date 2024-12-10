@@ -15,7 +15,7 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Aifia Med Amine - Software Engineer",
   description: "My Portfolio",
-  icons: "9496034.png",
+  icons: "logo.png",
 };
 
 export default function RootLayout({
