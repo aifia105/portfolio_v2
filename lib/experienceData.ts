@@ -1,6 +1,6 @@
 export const experiencesData = [
   {
-    title: "Fullstack Developer | Backend Developer",
+    title: "Fullstack Developer",
     company: "Rooly S",
     duration: "Mar 2024 - Present",
     application: "Shrimp Cultivation Management Platform",

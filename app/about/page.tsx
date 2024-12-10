@@ -7,15 +7,18 @@ import {
   TabsTrigger,
 } from "../../components/ui/tabs";
 import {
-  User2,
-  HomeIcon,
   GraduationCap,
-  Calendar,
   Briefcase,
+  ArrowUpFromDot,
+  User2,
+  Calendar,
+  HomeIcon,
 } from "lucide-react";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
-import { RiArrowDownSLine } from "react-icons/ri";
+import { useEffect, useState } from "react";
+import { certificationData, qualificationData } from "@/lib/aboutData";
+import { motion } from "framer-motion";
 
 const infoData = [
   {
@@ -36,80 +39,89 @@ const infoData = [
   },
 ];
 
-const qualificationData = [
-  {
-    title: "education",
-    data: [
-      {
-        university: "Esprit - Private School of Engineering and Technology",
-        qualification: "Software Engineering Degree",
-        years: "Sep 2024 - Present",
-      },
-      {
-        university: "Isamm - Higher Institute of Multimedia Arts of Manouba",
-        qualification: "Bachelor of Computer Science",
-        years: "Sep 2020 - Jun 2023",
-      },
-    ],
-  },
-  {
-    title: "experience",
-    data: [
-      {
-        Company: "Rooly S",
-        role: "Full-stack developer",
-        years: "Mar 2024 - Present",
-      },
-      {
-        Company: "CMS Plus",
-        role: "Full-stack developer Intern",
-        years: "Mar 2023 - May 2023",
-      },
-    ],
-  },
-];
-
-const certificationData = [
-  {
-    title: "certifications",
-    data: [
-      {
-        name: "- Supervised Machine Learning: Regression and Classification",
-      },
-      {
-        name: "- Supervised Machine Learning: Advanced Learning Algorithms",
-      },
-      {
-        name: "- Server-side Development with NodeJS, Express and MongoDB",
-      },
-    ],
-  },
-];
-
 const About = () => {
+  const fadeLeft = {
+    initial: { opacity: 0, x: -100 },
+    animate: { opacity: 1, x: 0 },
+  };
+
+  const fadeRight = {
+    initial: { opacity: 0, x: 100 },
+    animate: { opacity: 1, x: 0 },
+  };
+
+  const fadeUp = {
+    initial: { opacity: 0, y: 50 },
+    animate: { opacity: 1, y: 0 },
+  };
+
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const getData = (arr: any, title: string) => {
     return arr.find((item: any) => item.title === title);
   };
   return (
     <>
-      <section className="xl:h-[820px] pt-10 pb-12 xl:pb-24 xl:pt-16 ">
-        <div className="container mx-auto" suppressHydrationWarning>
-          <div className="-ml-3 sm:ml-4">
-            <h2 className="section-title mb-8 xl:mb-24 text-center mx-auto">
+      <motion.section
+        variants={fadeUp}
+        initial="initial"
+        animate="animate"
+        transition={{ duration: 0.5 }}
+        className="xl:h-[820px] pt-16 pb-16 xl:pb-24 xl:pt-28"
+      >
+        <div className="container mx-auto">
+          <motion.div
+            variants={fadeUp}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
+            <h2 className="section-title mb-16 text-center mx-auto">
               About me
             </h2>
-          </div>
+          </motion.div>
           <div className="flex flex-col gap-x-10 xl:flex-row xl:ml-10">
             {/*image*/}
-            <div className="hidden xl:flex flex-1 relative">
+            <motion.div
+              variants={fadeLeft}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="hidden xl:flex flex-1 relative"
+            >
               <DevImg
                 containerStyles="bg-about_shape_light w-[505px] h-[505px] bg-no-repeat relative"
                 ImgSrc="/coding-bro.svg"
               />
-            </div>
-            <div className="flex-1">
+            </motion.div>
+            <motion.div
+              variants={fadeRight}
+              initial="initial"
+              animate="animate"
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="flex-1"
+            >
               <Tabs defaultValue="personal">
-                <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border ">
+                <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border">
                   <TabsTrigger
                     className="w-[162px] xl:w-auto"
                     value={"personal"}
@@ -132,8 +144,8 @@ const About = () => {
                 <div className="text-lg mt-12 xl:mt-8">
                   <TabsContent value={"personal"}>
                     <div className="text-center xl:text-left">
-                      <h3 className="h3 mb-4">Who I Am</h3>
-                      <p className="subtitle max-w-xl mx-auto xl:mx-0">
+                      <h3 className="h3 mb-6">Who I Am</h3>
+                      <p className="subtitle max-w-xl mx-auto xl:mx-0 mb-6">
                         I am a motivated software developer with experience in
                         web development, system design, and backend systems.
                         Currently, I am honing my skills by working full-time as
@@ -153,7 +165,7 @@ const About = () => {
                           );
                         })}
                       </div>
-                      <div className="flex flex-col gap-y-2 ">
+                      <div className="flex flex-col gap-y-2">
                         <div className="text-blue-600 mr-2 sm:mr-1">
                           Languages
                         </div>
@@ -180,7 +192,7 @@ const About = () => {
                               (item: any, index: number) => {
                                 return (
                                   <div
-                                    className="flex gap-x-8 group "
+                                    className="flex gap-x-8 group"
                                     key={index}
                                   >
                                     <div className="h-[84px] w-[1px] bg-border relative ml-2">
@@ -215,7 +227,7 @@ const About = () => {
                               (item: any, index: number) => {
                                 return (
                                   <div
-                                    className="flex gap-x-8 group "
+                                    className="flex gap-x-8 group"
                                     key={index}
                                   >
                                     <div className="h-[84px] w-[1px] bg-border relative ml-2">
@@ -270,16 +282,42 @@ const About = () => {
                   </TabsContent>
                 </div>
               </Tabs>
-            </div>
+            </motion.div>
           </div>
-
-          {/* <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-7 animate-bounce">
-            <RiArrowDownSLine className="text-4xl text-blue-600" />
-          </div> */}
         </div>
-      </section>
-      <Skills />
-      <Experience />
+      </motion.section>
+
+      <motion.div
+        variants={fadeUp}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <Skills />
+      </motion.div>
+
+      <motion.div
+        variants={fadeUp}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <Experience />
+      </motion.div>
+
+      {showButton && (
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          onClick={scrollToTop}
+          className="fixed bottom-10 right-10 p-3 bg-blue-600 text-white rounded-full shadow-lg"
+        >
+          <ArrowUpFromDot />
+        </motion.button>
+      )}
     </>
   );
 };

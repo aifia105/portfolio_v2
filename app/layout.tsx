@@ -4,7 +4,6 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { cn } from "@/lib/utils";
 
-import Footer from "@/components/Footer";
 import NavbarComponent from "@/components/Navbar";
 import MobileNavbar from "@/components/MobileNavbar";
 

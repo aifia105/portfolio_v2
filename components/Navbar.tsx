@@ -15,7 +15,7 @@ const NavbarComponent = () => {
   const pathname = usePathname();
 
   return (
-    <Navbar isBordered>
+    <Navbar isBordered className="fixed w-full mx-auto z-20">
       <NavbarContent>
         <NavbarBrand>
           <img
@@ -30,7 +30,9 @@ const NavbarComponent = () => {
           <NextLink href="/" passHref legacyBehavior>
             <Link
               color="foreground"
-              className="hover:text-blue-600 cursor-pointer text-lg"
+              className={`hover:text-blue-600 cursor-pointer text-lg ${
+                pathname === "/" ? "text-blue-600" : ""
+              }`}
             >
               Home
             </Link>
@@ -40,7 +42,9 @@ const NavbarComponent = () => {
           <NextLink href="/about" passHref legacyBehavior>
             <Link
               color="foreground"
-              className="hover:text-blue-600 cursor-pointer text-lg"
+              className={`hover:text-blue-600 cursor-pointer text-lg ${
+                pathname === "/about" ? "text-blue-600" : ""
+              }`}
             >
               About
             </Link>
@@ -50,7 +54,9 @@ const NavbarComponent = () => {
           <NextLink href="/projects" passHref legacyBehavior>
             <Link
               color="foreground"
-              className="hover:text-blue-600 cursor-pointer text-lg"
+              className={`hover:text-blue-600 cursor-pointer text-lg ${
+                pathname === "/projects" ? "text-blue-600" : ""
+              }`}
             >
               Projects
             </Link>
@@ -60,7 +66,9 @@ const NavbarComponent = () => {
           <NextLink href="/contact" passHref legacyBehavior>
             <Link
               color="foreground"
-              className="hover:text-blue-600 cursor-pointer text-lg"
+              className={`hover:text-blue-600 cursor-pointer text-lg ${
+                pathname === "/contact" ? "text-blue-600" : ""
+              }`}
             >
               Contact Me
             </Link>

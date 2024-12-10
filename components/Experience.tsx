@@ -84,17 +84,14 @@ const Experience = () => {
                       {experience.duration}
                     </Typography>
                   </Typography>
-                  <Typography variant="h6" className="font-bold">
-                    {experience.title}
-                  </Typography>
-                  <Typography className=" gap-x-2 text-lg text-gray-400">
-                    {experience.application}
+                  <Typography variant="h6">
+                    <span className="font-bold"> {experience.title}</span>
                   </Typography>
                   <div
                     onClick={() => handleOpenDetails(experience)}
                     className="gap-1 "
                   >
-                    <button className="text-base text-blue-600 underline">
+                    <button className="text-base text-gray-300 hover:text-blue-600 underline mt-2">
                       Details
                     </button>
                   </div>

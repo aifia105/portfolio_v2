@@ -1,45 +1,51 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { Input } from "@nextui-org/react";
 
 import { Textarea } from "@nextui-org/react";
 import { Mail, Phone, Send } from "lucide-react";
 import { Button } from "@nextui-org/react";
-import {
-  RiDiscordFill,
-  RiInstagramFill,
-  RiLinkedinBoxFill,
-  RiTwitterXFill,
-} from "react-icons/ri";
 import MobileContact from "@/components/MobileContact";
-const Contact = () => {
-  const icons = [
-    {
-      path: "https://x.com/CrafterByt/",
-      name: <RiTwitterXFill />,
-    },
-    {
-      path: "https://www.instagram.com/mohamed.aifia/",
-      name: <RiInstagramFill />,
-    },
-    {
-      path: "https://x.com/CrafterByte",
-      name: <RiDiscordFill />,
-    },
-    {
-      path: "https://www.linkedin.com/in/aifia-mohamed-amine/",
-      name: <RiLinkedinBoxFill />,
-    },
-  ];
-  return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-16 bg-no-repeat bg-bottom">
-      <div className="container mx-auto">
-        <h2 className="section-title mb-4 xl:mb-20  text-center mx-auto">
-          Contact me
-        </h2>
 
-        <div className=" flex-col xl:flex-row pt-4 justify-between gap-x-16 hidden xl:flex">
+const Contact = () => {
+  const fadeLeft = {
+    initial: { opacity: 0, x: -100 },
+    animate: { opacity: 1, x: 0 },
+  };
+
+  const fadeRight = {
+    initial: { opacity: 0, x: 100 },
+    animate: { opacity: 1, x: 0 },
+  };
+
+  const fadeUp = {
+    initial: { opacity: 0, y: 50 },
+    animate: { opacity: 1, y: 0 },
+  };
+
+  return (
+    <section className="h-[84vh] pt-16 pb-16 xl:pt-28 bg-no-repeat bg-bottom">
+      <div className="container mx-auto">
+        <motion.div
+          variants={fadeUp}
+          initial="initial"
+          animate="animate"
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="section-title mb-10 text-center mx-auto">
+            Contact me
+          </h2>
+        </motion.div>
+        <div className="flex-col xl:flex-row pt-4 justify-between gap-x-16 hidden xl:flex">
           {/* Left Section */}
-          <div className="w-1/2 relative">
+          <motion.div
+            className="w-1/2 relative"
+            variants={fadeLeft}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
             <Image
               src="/world.svg"
               alt="Background"
@@ -68,10 +74,16 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Section */}
-          <div className=" items-center w-1/2 p-8">
+          <motion.div
+            className="items-center w-1/2 p-8"
+            variants={fadeRight}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.7, ease: "easeOut" }}
+          >
             <div className="flex gap-x-4 items-center justify-center mb-6 text-[22px] text-blue-600">
               <h3 className="flex-1 flex items-center gap-x-2 capitalize font-bold ">
                 Let&apos;s Get in Touch!
@@ -108,16 +120,22 @@ const Contact = () => {
               </div>
               <Button
                 type="submit"
-                className="gap-x-2 bg-blue-600 hover:bg-blue-600/70"
+                className="gap-x-2 bg-blue-600 hover:bg-white/80 hover:text-blue-600"
               >
                 Send Message <Send size={18} />
               </Button>
             </form>
-          </div>
+          </motion.div>
         </div>
-        <div className="flex xl:hidden pt-8  ">
+        <motion.div
+          className="flex xl:hidden pt-8"
+          variants={fadeLeft}
+          initial="initial"
+          animate="animate"
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <MobileContact />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
