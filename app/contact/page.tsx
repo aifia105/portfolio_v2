@@ -25,18 +25,19 @@ const Contact = () => {
   };
 
   return (
-    <section className="h-[84vh] pt-16 pb-16 xl:pt-28 bg-no-repeat bg-bottom">
+    <section className="h-[84vh] pt-16 pb-16 xl:pt-28 bg-no-repeat bg-bottom overflow-hidden">
       <div className="container mx-auto">
-        <motion.div
+        <motion.section
           variants={fadeUp}
           initial="initial"
           animate="animate"
           transition={{ duration: 0.5 }}
+          className=" pb-8  xl:pb-12"
         >
-          <h2 className="section-title mb-10 text-center mx-auto">
-            Contact me
-          </h2>
-        </motion.div>
+          <div className="container mx-auto px-4">
+            <h2 className="section-title mb-2 text-center">Contact me</h2>
+          </div>
+        </motion.section>
         <div className="flex-col xl:flex-row pt-4 justify-between gap-x-16 hidden xl:flex">
           {/* Left Section */}
           <motion.div

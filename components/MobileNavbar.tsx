@@ -9,6 +9,7 @@ import {
   NavbarMenuItem,
   Link,
 } from "@nextui-org/react";
+import Image from "next/image";
 
 const MobileNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -27,6 +28,10 @@ const MobileNavbar = () => {
       href: "/projects",
     },
     {
+      name: "Experience",
+      href: "/experience",
+    },
+    {
       name: "Contact",
       href: "/contact",
     },
@@ -36,7 +41,7 @@ const MobileNavbar = () => {
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="flex justify-between items-center w-full">
         <NavbarBrand>
-          <img src="/9496034.png" alt="Logo" className="w-12 h-12" />
+          <Image src="/9496034.png" alt="Logo" width={48} height={48} />
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

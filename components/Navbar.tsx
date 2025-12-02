@@ -7,6 +7,7 @@ import {
   NavbarItem,
   Link,
 } from "@nextui-org/react";
+import Image from "next/image";
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -18,10 +19,12 @@ const NavbarComponent = () => {
     <Navbar isBordered className="fixed w-full mx-auto z-20">
       <NavbarContent>
         <NavbarBrand>
-          <img
+          <Image
             src="/logo.png"
             alt="Logo"
-            className="flex items-start justify-start w-12 h-12"
+            className="flex items-start justify-start"
+            width={48}
+            height={48}
           />
         </NavbarBrand>
       </NavbarContent>
@@ -59,6 +62,18 @@ const NavbarComponent = () => {
               }`}
             >
               Projects
+            </Link>
+          </NextLink>
+        </NavbarItem>
+        <NavbarItem isActive={pathname === "/experience"}>
+          <NextLink href="/experience" passHref legacyBehavior>
+            <Link
+              color="foreground"
+              className={`hover:text-blue-600 cursor-pointer text-lg ${
+                pathname === "/experience" ? "text-blue-600" : ""
+              }`}
+            >
+              Experience
             </Link>
           </NextLink>
         </NavbarItem>

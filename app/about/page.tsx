@@ -14,11 +14,12 @@ import {
   Calendar,
   HomeIcon,
 } from "lucide-react";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
 import { useEffect, useState } from "react";
 import { certificationData, qualificationData } from "@/lib/aboutData";
 import { motion } from "framer-motion";
+
+const sammery =
+  "I am a motivated software developer with experience in web development, system design, and backend systems. Currently, I am honing my skills by working full-time as a software developer while pursuing an engineering degree through evening courses.";
 
 const infoData = [
   {
@@ -80,25 +81,26 @@ const About = () => {
     return arr.find((item: any) => item.title === title);
   };
   return (
-    <>
+    <div className="overflow-hidden">
       <motion.section
         variants={fadeUp}
         initial="initial"
         animate="animate"
         transition={{ duration: 0.5 }}
-        className="xl:h-[820px] pt-16 pb-16 xl:pb-24 xl:pt-28"
+        className="xl:h-screen pt-16 pb-16 xl:pb-24 xl:pt-28"
       >
         <div className="container mx-auto">
-          <motion.div
+          <motion.section
             variants={fadeUp}
             initial="initial"
             animate="animate"
-            transition={{ duration: 0.7, ease: "easeOut" }}
+            transition={{ duration: 0.5 }}
+            className=" pb-8  xl:pb-12"
           >
-            <h2 className="section-title mb-16 text-center mx-auto">
-              About me
-            </h2>
-          </motion.div>
+            <div className="container mx-auto px-4">
+              <h2 className="section-title mb-2 text-center">About me</h2>
+            </div>
+          </motion.section>
           <div className="flex flex-col gap-x-10 xl:flex-row xl:ml-10">
             {/*image*/}
             <motion.div
@@ -146,11 +148,7 @@ const About = () => {
                     <div className="text-center xl:text-left">
                       <h3 className="h3 mb-6">Who I Am</h3>
                       <p className="subtitle max-w-xl mx-auto xl:mx-0 mb-6">
-                        I am a motivated software developer with experience in
-                        web development, system design, and backend systems.
-                        Currently, I am honing my skills by working full-time as
-                        a software developer while pursuing an engineering
-                        degree through evening courses.
+                        {sammery}
                       </p>
                       <div className="grid xl:grid-cols-2 gap-4 mb-12">
                         {infoData.map((item, index) => {
@@ -287,27 +285,7 @@ const About = () => {
         </div>
       </motion.section>
 
-      <motion.div
-        variants={fadeUp}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-      >
-        <Skills />
-      </motion.div>
-
-      <motion.div
-        variants={fadeUp}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-      >
-        <Experience />
-      </motion.div>
-
-      {showButton && (
+      {/* {showButton && (
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -317,8 +295,8 @@ const About = () => {
         >
           <ArrowUpFromDot />
         </motion.button>
-      )}
-    </>
+      )} */}
+    </div>
   );
 };
 

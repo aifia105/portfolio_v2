@@ -1,72 +1,130 @@
 export const projects = [
-  {
-    name: "Pokémon Stats Explorer",
-    description:
-      "A web application for explore Pokémon with their detailed statistics",
-    image: "projects/PokemonStatApp.png",
-    github: "https://github.com/aifia105/Pokemon-Stats-Explorer",
-    stack: ["NextJS", "Tailwind CSS", "GraphQL", "Chart JS", "Apollo Client"],
-    cantPreview: false,
-    previewUrl: "https://pokemon-cards-omega-pink.vercel.app/",
-  },
-  {
-    name: "Responsive Car Rental Website",
-    description:
-      "A Responsive landing page for car rental with state management.",
-    image: "projects/CarRentalApp.png",
-    github: "https://github.com/aifia105/Car_renting-landing-page",
-    stack: ["Angular", "Ngrx", "Tailwind CSS"],
-    cantPreview: false,
-    previewUrl: "https://car-renting-landing-page.vercel.app/home",
-  },
-  {
-    name: "Fullstack Responsive E-Commerce Platform",
-    description: "A Full-stack responsive eCommerce platform.",
-    image: "projects/E-commerceApp.PNG",
-    github: "https://github.com/aifia105/Ecommerce-Shop-api",
-    stack: [
-      "Angular",
-      "Ngrx",
-      "Spring Boot",
-      "MySQL",
-      "JWT",
-      "Spring JPA",
-      "REST API",
-    ],
-    cantPreview: true,
-    previewUrl: "",
-  },
-];
-
-export const cli_projects = [
-  {
-    name: "Real-time Messaging Backend System",
-    description:
-      "Real-time messaging backend system supporting one-on-one and group chats with user authentication and user account management.",
-    github: "https://github.com/aifia105/Chat_app",
-    stack: [
-      "Spring Boot",
-      "Spring JPA",
-      "MongoDB",
-      "Web Socket",
-      "JWT",
-      "Spring Security",
-      "REST API",
-    ],
-    cantPreview: true,
-  },
-  {
-    name: "URL Shortener Service",
-    description: "URL shortener web service.",
-    github: "https://github.com/aifia105/URL-shortener-service",
-    stack: [
-      "TypeScript",
-      "NestJS",
-      "Mongoose",
-      "MongoDB",
-      "Swagger",
-      "REST API",
-    ],
-    cantPreview: true,
-  },
+    {
+        name: "Shrimp Farm Management Platform (Enterprise SaaS)",
+        description:
+            "A large-scale platform for digitizing shrimp farm operations, including program scheduling, task workflows, multi-level farm modeling, and real-time operational diagnostics.",
+        image: "projects/shrimp-platform.png",
+        github: "",
+        stack: [
+            "TypeScript",
+            "Next.js",
+            "Redux Toolkit",
+            "Tailwind CSS",
+            "NestJS",
+            "MongoDB",
+            "Mongoose",
+            "JWT",
+            "AWS",
+            "MongoDB Atlas",
+            "Docker",
+            "EKS",
+            "Git",
+            "GitHub",
+        ],
+        cantPreview: true,
+        previewUrl: "",
+    },
+    {
+        name: "Fullstack E-Commerce Platform",
+        description:
+            "A complete eCommerce system with secure authentication, file uploads, admin dashboards, product management, and an integrated real-time chat system.",
+        image: "projects/ecommerce.png",
+        github: "https://github.com/aifia105/Ecommerce-Shop-api",
+        stack: [
+            "Angular",
+            "NgRx",
+            "Tailwind CSS",
+            "Spring Boot",
+            "Spring Security",
+            "JPA",
+            "MySQL",
+            "JWT",
+        ],
+        cantPreview: true,
+        previewUrl: "",
+    },
+    {
+        name: "Gym Mobile Application",
+        description:
+            "A mobile fitness application featuring workout flows, tracking screens, navigation, and backend-integrated user data management.",
+        image: "projects/gym-app.png",
+        github: "",
+        stack: [
+            "React Native",
+            "Expo",
+            "Tailwind CSS",
+            "Go",
+            "Go/Gin",
+            "Go/Gorm",
+            "PostgreSQL",
+        ],
+        cantPreview: true,
+        previewUrl: "",
+    },
+    {
+        name: "Containerized URL Shortener Service",
+        description:
+            "A URL shortener microservice with REST APIs, Dockerized architecture, database storage, and CI/CD-ready deployment. Published images on Docker Hub.",
+        image: "projects/url-shortener.png",
+        github: "https://github.com/aifia105/URL-shortener-service",
+        stack: [
+            "React",
+            "NestJS",
+            "TypeScript",
+            "MongoDB",
+            "Mongoose",
+            "Docker",
+            "Docker Compose",
+            "Azure",
+        ],
+        cantPreview: true,
+        previewUrl: "",
+    },
+    {
+        name: "DNS Server from Scratch (TCP & UDP)",
+        description:
+            "A fully functional DNS resolver built using Go’s net package with raw packet parsing, TCP/UDP session handling, and zero external libraries.",
+        github: "https://github.com/aifia105/dns-server",
+        stack: ["Go", "TCP", "UDP", "Networking", "DNS Protocol"],
+        cantPreview: true,
+    },
+    {
+        name: "Machine Learning Housing Price Predictor",
+        description:
+            "A machine learning model for predicting home prices using data preprocessing, regression models, and evaluation pipelines.",
+        github: "",
+        stack: [
+            "Python",
+            "Scikit-learn",
+            "Pandas",
+            "NumPy",
+            "Gradient Descent",
+        ],
+        cantPreview: true,
+    },
+    {
+        name: "File-Sharing Backend Service",
+        description:
+            "A backend service for secure file uploads, storage, and download streaming, designed with scalable API architecture.",
+        github: "",
+        stack: ["TypeScript", "NestJS", "MongoDB", "Mongoose", "File-Upload"],
+        cantPreview: true,
+    },
+    {
+        name: "GraphQL Pokémon Explorer",
+        description:
+            "A modern GraphQL-powered Pokémon browsing interface with filtering, sorting, pagination, and real-time stat visualization.",
+        github: "https://github.com/aifia105/Pokemon-Stats-Explorer",
+        stack: ["React", "GraphQL", "Apollo Client", "Chart.js"],
+        cantPreview: false,
+        previewUrl: "https://pokemon-cards-omega-pink.vercel.app/",
+    },
+    {
+        name: "Go HTTP Server",
+        description:
+            "A manually implemented HTTP server in Go handling request parsing, routing, and concurrent connections without frameworks.",
+        github: "",
+        stack: ["Go", "net", "TCP", "Concurrency"],
+        cantPreview: true,
+    },
 ];
